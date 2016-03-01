@@ -1,0 +1,27 @@
+{
+  "name": "react-map-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "onchange 'style/*.less' -- npm run build-css",
+    "watch-js": "watchify -t [ babelify --presets [ es2015 react ] ] js/*.jsx js/*.js -o dist/bundle.js -dv",
+    "watch": "npm run watch-css & npm run watch-js",
+    "build-css": "lessc style/main.less dist/style.css",
+    "build-js": "browserify -t [ babelify --presets [ es2015 react ] ] js/*.jsx js/*.js -o dist/bundle.js",
+    "build": "npm run build-css && npm run build-js"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "leaflet": "^0.7.7",
+    "less": "^2.6.0",
+    "onchange": "^2.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "author": "@fsrowe",
+  "license": "ISC"
+}
