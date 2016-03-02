@@ -5,5 +5,5 @@ var Map = require('./Map.jsx')
 
 ReactDOM.render(
   <Map />,
-  document.getElementById('map')
+  document.getElementById('map-container')
 )
