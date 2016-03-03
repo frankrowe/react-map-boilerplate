@@ -23,5 +23,8 @@
     "babel-preset-react": "^6.5.0"
   },
   "author": "@fsrowe",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "watchify": "^3.7.0"
+  }
 }
